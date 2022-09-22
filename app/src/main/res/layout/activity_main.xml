@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:text="SHARE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnshare"
+        android:onClick="share"
+        />
+
+    <Button
+        android:text="BUKA INSTAGRAM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnshare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/btnbuka"
+        android:onClick="buka"
+        />
+
+    <Button
+        android:id="@+id/btninfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnbuka"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:onClick="tentang"
+        android:text="TENTANG PONSEL" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"/>
+
+</RelativeLayout>
